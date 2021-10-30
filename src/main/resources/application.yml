@@ -1,0 +1,14 @@
+resilience4j:
+  ratelimiter:
+    instances:
+      basicExample:
+        limitForPeriod: 2
+        limitRefreshPeriod: 10s
+        timeoutDuration: 10s
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
